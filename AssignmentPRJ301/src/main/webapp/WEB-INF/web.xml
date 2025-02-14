@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+
+<!--        <servlet>-->
+<!--            <servlet-name>LoginServlet</servlet-name>-->
+<!--            <servlet-class>controllers.LoginServlet</servlet-class>-->
+<!--        </servlet>-->
+<!--        <servlet-mapping>-->
+<!--            <servlet-name>LoginServlet</servlet-name>-->
+<!--            <url-pattern>/</url-pattern>-->
+<!--        </servlet-mapping>-->
+<!--        <servlet-mapping>-->
+<!--            <servlet-name>LoginServlet</servlet-name>-->
+<!--            <url-pattern>/LoginServlet/*</url-pattern>-->
+<!--        </servlet-mapping>-->
+    <servlet>
+        <servlet-name>AddNovelController</servlet-name>
+        <servlet-class>controllers.AddNovelController</servlet-class>
+    </servlet>
+<!--    <servlet>-->
+<!--        <servlet-name>novelPageController</servlet-name>-->
+<!--        <servlet-class>controllers.novelPageController</servlet-class>-->
+<!--    </servlet>-->
+    <servlet>
+        <servlet-name>accountController</servlet-name>
+        <servlet-class>controllers.accountController</servlet-class>
+    </servlet>
+
+    <servlet>
+        <servlet-name>PostServlet</servlet-name>
+        <servlet-class>controllers.PostServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PostServlet</servlet-name>
+        <url-pattern>/PostServlet/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/imgs/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>AddNovelController</servlet-name>
+        <url-pattern>/AddNovelController/*</url-pattern>
+    </servlet-mapping>
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>novelPageController</servlet-name>-->
+<!--        <url-pattern>/novelPageController/*</url-pattern>-->
+<!--    </servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>accountController</servlet-name>
+        <url-pattern>/accountController/*</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>EditPostServlet</servlet-name>
+        <servlet-class>controllers.EditPostServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>EditPostServlet</servlet-name>
+        <url-pattern>/EditPostServlet/*</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+    <!--wei-->
+<!--    <servlet>-->
+<!--        <servlet-name>editNovelController</servlet-name>-->
+<!--        <servlet-class>controllers.EditPostServlet</servlet-class>-->
+<!--    </servlet>-->
+    <servlet>
+        <servlet-name>editChapterController</servlet-name>
+        <servlet-class>controllers.editChapterController</servlet-class>
+    </servlet>
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>editNovelController</servlet-name>-->
+<!--        <url-pattern>/editNovelController/*</url-pattern>-->
+<!--    </servlet-mapping>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>editNovelController</servlet-name>-->
+<!--        <url-pattern>/ManagePostServlet/EditNovel/*</url-pattern>-->
+<!--    </servlet-mapping>-->
+    <servlet-mapping>
+        <servlet-name>editChapterController</servlet-name>
+        <url-pattern>/editChapterController/*</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>SearchingController</servlet-name>
+        <servlet-class>controllers.SearchingController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>SearchingController</servlet-name>
+        <url-pattern>/SearchingController/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SearchingController</servlet-name>
+        <url-pattern>/SearchingController</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>ReadingController</servlet-name>
+        <servlet-class>controllers.ReadingController</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ReadingController</servlet-name>
+        <url-pattern>/ReadingController/*</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>controllers.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet/*</url-pattern>
+    </servlet-mapping>
+
+
+
+
+
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+
+    <welcome-file-list>
+        <welcome-file>LoginServlet</welcome-file>
+    </welcome-file-list>
+
+
+
+<!--    Moi them  -->
+
+
+
+</web-app>
